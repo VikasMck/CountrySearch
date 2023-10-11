@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MySQL Data</title>
+
+    <!-- Using W3 instead of bootstrap because it is something I have not done -->
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/w3css/4/w3.css"
+    />
+  </head>
+  <body>
+    <div class="w3-container">
+      <h1 class="w3-green">Search Program</h1>
+      <table class="w3-table-all w3-hoverable">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>Country Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ejs code which iterates through the table -->
+          <% for (var i = 0; i < results.length; i++) { %>
+            <tr>
+              <td><%= results[i].country_name %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
