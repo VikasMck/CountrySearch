@@ -11,10 +11,11 @@ const config = {
   server: 'localhost',
   database: 'LocalConnections',
 
-  //sql server ssl ecryption
+  //mssql ssl ecryption
   options: {
     encrypt: true,
     trustServerCertificate: true,
+    enableArithAbort: true, //fix the issues with tedious in regards to nodejs connecting to mssql
   },
 };
 
