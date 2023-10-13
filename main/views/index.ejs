@@ -3,72 +3,10 @@
 
 <head>
 
-  <title>WorkhumanChallenge</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
-
-  <!-- Inline css due to the program being small -->
-  <style>
-      body {
-          background-image: url('https://pngimg.com/d/world_map_PNG34.png');
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-      }
-
-      .main_div {
-          margin: auto;
-          max-width: 900px;
-          text-align: center;
-      }
-
-      table {
-          background-color: rgba(255, 255, 255, 0.6); 
-      }
-
-      .table_title{
-        background-color: rgba(44, 43, 43, 0.9); 
-        color: white;
-      }
-      table.w3-table tr{
-          border: 2px solid rgb(184, 184, 184); 
-      }
-
-      .extra_title {
-          font-size: 40px;
-          color: #2c582d; 
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-          text-align: center;
-          margin: 20px 0;
-          border-radius: 15px;
-          padding: 20px;
-      }
-
-  </style>
-
-  <!-- small script for the search function -->
-  <script>
-    function lookupFxn() {
-        var i, txtValue;
-        var input = document.getElementById("main_input");
-        var filter = input.value.toUpperCase();
-        var table = document.getElementById("main_table");
-        var tr = table.getElementsByClassName("table-row");
-
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-  </script>
-
+    <title>WorkhumanChallenge</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css"> 
+    <link rel="stylesheet" href="/style.css">
 
 </head>
 
@@ -95,6 +33,9 @@
             </tbody>
         </table>
     </div>
+
+
+    <script src="/script.js"></script>
 
 </body>
 

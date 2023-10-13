@@ -12,7 +12,7 @@ const config = {
   database: 'LocalConnections',
 
   //mssql ssl ecryption
-  options: {
+    options: {
     encrypt: true,
     trustServerCertificate: true,
     enableArithAbort: true, //fix the issues with tedious in regards to nodejs connecting to mssql
@@ -23,6 +23,8 @@ const config = {
 config.password = readlineSync.question('Enter the password: ', {
   hideEchoBack: true, 
 });
+
+app.use(express.static('extras'));
 
 //define route handler
 app.get('/', (req, res) => {
