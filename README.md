@@ -1,5 +1,4 @@
 # Short Project
-Made for showing off the code regarding the workhuman technical challenge
 
 Decided to use something that I am less familiar with such as nodejs in order to show off my learning ability instead of doing this with tools that I am familiar with.
 
